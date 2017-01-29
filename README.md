@@ -1,2 +1,4 @@
-# Xamarin.Forms.CarouselView
-Xamarin.Forms Carousel View Recipe
+# Xamarin.Forms.Carousel View Recipe
+Hands on Xamarin.Forms.CarouselView using Code behind not XAML.
+
+http://i.giphy.com/Sw7bIqpubdaJG.gif
