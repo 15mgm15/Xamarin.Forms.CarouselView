@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{C56752FD-2735-4D97-9D02-283E15060FEC}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>CarouselViewTest</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)CarouselViewTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\OnBoardingPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\OnBoardingTemplate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\OnBoardingModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\OnboardingPageVm.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CarouselIndicators.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Views\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
+  </ItemGroup>
+</Project>
