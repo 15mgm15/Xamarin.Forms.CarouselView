@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
+﻿using CarouselView.FormsPlugin.iOS;
 using Foundation;
 using UIKit;
 
@@ -13,8 +10,7 @@ namespace CarouselViewTest.iOS
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
 			global::Xamarin.Forms.Forms.Init();
-			var cv = typeof(Xamarin.Forms.CarouselView);
-			Assembly.Load(cv.FullName);
+            CarouselViewRenderer.Init();
 
 			LoadApplication(new App());
 
