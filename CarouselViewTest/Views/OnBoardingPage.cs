@@ -18,6 +18,7 @@ namespace CarouselViewTest
 			{
 				VerticalOptions = LayoutOptions.FillAndExpand,
 				HorizontalOptions = LayoutOptions.FillAndExpand,
+                ShowIndicators = true
 			};
 
 			var onBoardingDataTemplate = new DataTemplate(CreateViewTemplate);
@@ -32,7 +33,6 @@ namespace CarouselViewTest
 			#region Bindings
 
             carouselView.SetBinding(CarouselViewControl.ItemsSourceProperty, nameof(_onBoardingVm.BoardingObjectsList));
-            carouselView.SetBinding(CarouselViewControl.PositionProperty, nameof(_onBoardingVm.Position), BindingMode.TwoWay);
 			
 			#endregion
 		}
