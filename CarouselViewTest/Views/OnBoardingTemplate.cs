@@ -3,19 +3,22 @@ using Xamarin.Forms;
 
 namespace CarouselViewTest
 {
+    /// <summary>
+    /// If you want to use a custom view on your DataTemplate
+    /// </summary>
 	public class OnboardingTemplateView : StackLayout
 	{
-		public BoxView BackGroundProperty;
+		public BoxView BackGroundBoxView;
 
 		public OnboardingTemplateView()
 		{
-			BackGroundProperty = new BoxView
+			BackGroundBoxView = new BoxView
 			{
 				HorizontalOptions = LayoutOptions.FillAndExpand,
 				VerticalOptions = LayoutOptions.FillAndExpand
 			};
 
-			Children.Add(BackGroundProperty);
+			Children.Add(BackGroundBoxView);
 		}
 	}
 }

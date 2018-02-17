@@ -2,7 +2,7 @@
 using CarouselView.FormsPlugin.Abstractions;
 using Xamarin.Forms;
 
-namespace CarouselViewTest
+namespace CarouselViewTest.Views
 {
 	public class OnBoardingPage : ContentPage
 	{
@@ -43,10 +43,14 @@ namespace CarouselViewTest
 		/// <returns>The custom Xamarin.Forms.StackLayout, OnboardingTemplateView.</returns>
 		View CreateViewTemplate()
 		{
-			var view = new OnboardingTemplateView();
-			view.BindingContext = _onBoardingVm.BoardingObjectsList;
-			view.BackGroundProperty.SetBinding(BackgroundColorProperty, nameof(OnboardingModel.Color));
-			return view;
+            //var view = new OnboardingTemplateView
+            var view = new StackLayout
+            {
+                BindingContext = _onBoardingVm.BoardingObjectsList
+            };
+            //view.BackGroundBoxView.SetBinding(BackgroundColorProperty, nameof(OnboardingModel.Color));
+            view.SetBinding(BackgroundColorProperty, nameof(OnboardingModel.Color));
+            return view;
 		}
 	}
 }

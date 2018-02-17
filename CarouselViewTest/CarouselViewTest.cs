@@ -1,5 +1,5 @@
 ﻿using System;
-
+using CarouselViewTest.Views;
 using Xamarin.Forms;
 
 namespace CarouselViewTest
@@ -8,7 +8,11 @@ namespace CarouselViewTest
 	{
 		public App()
 		{
-			MainPage = new NavigationPage(new OnBoardingPage());
+            //Code Behind
+			//MainPage = new NavigationPage(new OnBoardingPage());
+
+            //Xaml
+            MainPage = new NavigationPage(new OnBoardingPageXaml());
 		}
 
 		protected override void OnStart()

@@ -1,4 +1,4 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 using Xamarin.Forms;
 
@@ -7,13 +7,11 @@ namespace CarouselViewTest
 	public class OnboardingPageVm : INotifyPropertyChanged
 	{
 		public event PropertyChangedEventHandler PropertyChanged;
-		public ObservableCollection<OnboardingModel> BoardingObjectsList { get; set; }
-
+		public List<OnboardingModel> BoardingObjectsList { get; set; }
 
 		public OnboardingPageVm()
 		{
-
-			BoardingObjectsList = new ObservableCollection<OnboardingModel>
+			BoardingObjectsList = new List<OnboardingModel>
 			{
 				new OnboardingModel
 				{

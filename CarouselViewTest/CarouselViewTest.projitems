@@ -14,11 +14,19 @@
     <Compile Include="$(MSBuildThisFileDirectory)Views\OnBoardingTemplate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\OnBoardingModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\OnboardingPageVm.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\CarouselIndicators.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\OnBoardingPageXaml.xaml.cs">
+      <DependentUpon>OnBoardingPageXaml.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Views\" />
     <Folder Include="$(MSBuildThisFileDirectory)Models\" />
     <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\OnBoardingPageXaml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
